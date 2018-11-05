@@ -1,1 +1,13 @@
 https://docs.microsoft.com/en-us/outlook/add-ins/quick-start?tabs=visual-studio
+
+
+portal.office.com
+Use oopit tenant
+Open outlook and the admin portal
+in Admin portal:
+	
+
+\GitHub\OOP_Outlook_Test\OOPOutlookTestAddin\OOPOutlookTestAddin\OOPOutlookTestAddinManifest
+
+
+
