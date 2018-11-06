@@ -14,12 +14,12 @@
 
   <!--Version. Updates from the store only get triggered if there is a version change. -->
   <Version>1.0.0.0</Version>
-  <ProviderName>[Provider name]</ProviderName>
+  <ProviderName>Andy</ProviderName>
   <DefaultLocale>en-US</DefaultLocale>
   <!-- The display name of your add-in. Used on the store and various places of the Office UI such as the add-ins dialog. -->
   <DisplayName DefaultValue="ManifestChecker" />
   <Description DefaultValue="ManifestChecker"/>
-  <IconUrl DefaultValue="~remoteAppUrl/Images/icon64.png"/>
+  <IconUrl DefaultValue="https://i.redd.it/m95z7prglqw11.jpg"/>
 
   <SupportUrl DefaultValue="http://www.contoso.com" />
   <!-- Domains that will be allowed when navigating. For example, if you use ShowTaskpane and then have an href link, navigation will only be allowed if the domain is on this list. -->
@@ -90,7 +90,7 @@
           </ExtensionPoint>
 
           <!-- Message Read -->
-          <!--ExtensionPoint xsi:type="MessageReadCommandSurface">
+          <ExtensionPoint xsi:type="MessageReadCommandSurface">
             <OfficeTab id="TabDefault">
               <Group id="msgReadGroup">
                 <Label resid="groupLabel" />
@@ -112,7 +112,7 @@
                 
               </Group>
             </OfficeTab>
-          </ExtensionPoint -->
+          </ExtensionPoint>
           <!-- Go to http://aka.ms/ButtonCommands to learn how to add more Controls: ExecuteFunction and Menu -->
           <!-- Go to http://aka.ms/ExtensionPointsCommands to learn how to add more Extension Points: MessageRead, AppointmentOrganizer, AppointmentAttendee -->
         </DesktopFormFactor>
@@ -121,9 +121,9 @@
 
     <Resources>
       <bt:Images>
-        <bt:Image id="icon16" DefaultValue="~remoteAppUrl/Images/icon16.png"/>
-        <bt:Image id="icon32" DefaultValue="~remoteAppUrl/Images/icon32.png"/>
-        <bt:Image id="icon80" DefaultValue="~remoteAppUrl/Images/icon80.png"/>
+        <bt:Image id="icon16" DefaultValue="https://i.redd.it/m95z7prglqw11.jpg"/>
+        <bt:Image id="icon32" DefaultValue="https://i.redd.it/m95z7prglqw11.jpg"/>
+        <bt:Image id="icon80" DefaultValue="https://i.redd.it/m95z7prglqw11.jpg"/>
       </bt:Images>
       <bt:Urls>
         <bt:Url id="functionFile" DefaultValue="~remoteAppUrl/Functions/FunctionFile.html"/>
