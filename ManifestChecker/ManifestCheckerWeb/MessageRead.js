@@ -19,10 +19,6 @@
             
         });
 
-        Office.context.mailbox.item.body.setSelectedDataAsync("<b>Hello World Read!</b>", { coercionType: "html" });
-
     }
-
-    Office.context.mailbox.item.body.setSelectedDataAsync("<b>Hello World Read Second!</b>", { coercionType: "html" });
-
+    
 })();

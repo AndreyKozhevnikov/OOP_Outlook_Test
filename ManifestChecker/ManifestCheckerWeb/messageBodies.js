@@ -1,3 +1,14 @@
+Office.onReady(function (info) {
+    if (info.host === Office.HostType.Excel) {
+        // Do Excel-specific initialization (for example, make add-in task pane's
+        // appearance compatible with Excel "green").
+    }
+    if (info.platform === Office.PlatformType.PC) {
+        // Make minor layout changes in the task pane.
+    }
+    console.log(`Office.js is now ready in ${info.host} on ${info.platform}`);
+});
+
 var item;
 
 (function () {
@@ -18,78 +29,21 @@ var item;
             
         });
         Office.context.mailbox.item.body.setSelectedDataAsync("<b>Hello World Bodies!</b>", { coercionType: "html" });
+
+        
     }
+
+    
 
 })();
 
-/*
 
-// Get the body type of the composed item, and prepend data
-// in the appropriate data type in the item body.
-function prependItemBody() {
-    item.body.getTypeAsync(
-        function (result) {
-            if (result.status == Office.AsyncResultStatus.Failed) {
-                write(asyncResult.error.message);
-            }
-            else {
-                // Successfully got the type of item body.
-                // Prepend data of the appropriate type in body.
-                if (result.value == Office.MailboxEnums.BodyType.Html) {
-                    // Body is of HTML type.
-                    // Specify HTML in the coercionType parameter
-                    // of prependAsync.
-                    item.body.prependAsync(
-                        '<b>Greetings from message bodies!</b>',
-                        {
-                            coercionType: Office.CoercionType.Html,
-                            asyncContext: { var3: 1, var4: 2 }
-                        },
-                        function (asyncResult) {
-                            if (asyncResult.status ==
-                                Office.AsyncResultStatus.Failed) {
-                                write(asyncResult.error.message);
-                            }
-                            else {
-                                // Successfully prepended data in item body.
-                                // Do whatever appropriate for your scenario,
-                                // using the arguments var3 and var4 as applicable.
-                            }
-                        });
-                }
-                else {
-                    // Body is of text type. 
-                    item.body.prependAsync(
-                        'Greetings from message read!',
-                        {
-                            coercionType: Office.CoercionType.Text,
-                            asyncContext: { var3: 1, var4: 2 }
-                        },
-                        function (asyncResult) {
-                            if (asyncResult.status ==
-                                Office.AsyncResultStatus.Failed) {
-                                write(asyncResult.error.message);
-                            }
-                            else {
-                                // Successfully prepended data in item body.
-                                // Do whatever appropriate for your scenario,
-                                // using the arguments var3 and var4 as applicable.
-                            }
-                        });
-                }
-            }
-        });
-
-}
-
-*/
-
-// Writes to a div with id='message' on the page.
 function write(message) {
     //Office.context.mailbox.item.to.setAsync("This is to whom");
 
     Office.context.mailbox.item.body.setAsync("<b>Hello World Button!</b>", { coercionType: "html" });
 }
+
 
 var e1 = document.getElementById("button1");
 if (e1.addEventListener)
