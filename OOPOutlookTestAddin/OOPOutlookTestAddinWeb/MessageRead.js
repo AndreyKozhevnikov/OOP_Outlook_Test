@@ -2,30 +2,80 @@
 
 (function () {
 
-    // Initialization will fail if Office.initialize
-    // does not have a function assigned to it
-    Office.initialize = function (reason) {
+    var item;
+
+    Office.initialize = function () {
+        item = Office.context.mailbox.item;
+        // Checks for the DOM to load using the jQuery ready function.
         $(document).ready(function () {
-            loadItemProps(Office.context.mailbox.item);
+            // After the DOM is loaded, app-specific code can run.
+            // Insert data in the top of the body of the composed 
+            // item.
+            prependItemBody();
         });
-    };
-
-    function loadItemProps(item) {
-        // Get the table body element
-        var tbody = $('.prop-table');
-
-        // Add a row to the table for each message property
-        tbody.append(makeTableRow("Id", item.itemId));
-        tbody.append(makeTableRow("Subject", item.subject));
-        tbody.append(makeTableRow("Message Id", item.internetMessageId));
-        tbody.append(makeTableRow("From", item.from.displayName + " &lt;" +
-            item.from.emailAddress + "&gt;"));
     }
 
-    function makeTableRow(name, value) {
-        return $("<tr><td><strong>" + name +
-            "</strong></td><td class=\"prop-val\"><code>" +
-            value + "</code></td></tr>");
+    // Get the body type of the composed item, and prepend data  
+    // in the appropriate data type in the item body.
+    function prependItemBody() {
+        item.body.getTypeAsync(
+            function (result) {
+                if (result.status == Office.AsyncResultStatus.Failed) {
+                    write(asyncResult.error.message);
+                }
+                else {
+                    // Successfully got the type of item body.
+                    // Prepend data of the appropriate type in body.
+                    if (result.value == Office.MailboxEnums.BodyType.Html) {
+                        // Body is of HTML type.
+                        // Specify HTML in the coercionType parameter
+                        // of prependAsync.
+                        item.body.prependAsync(
+                            '<b>Greetings!</b>',
+                            {
+                                coercionType: Office.CoercionType.Html,
+                                asyncContext: { var3: 1, var4: 2 }
+                            },
+                            function (asyncResult) {
+                                if (asyncResult.status ==
+                                    Office.AsyncResultStatus.Failed) {
+                                    write(asyncResult.error.message);
+                                }
+                                else {
+                                    // Successfully prepended data in item body.
+                                    // Do whatever appropriate for your scenario,
+                                    // using the arguments var3 and var4 as applicable.
+                                }
+                            });
+                    }
+                    else {
+                        // Body is of text type. 
+                        item.body.prependAsync(
+                            'Greetings!',
+                            {
+                                coercionType: Office.CoercionType.Text,
+                                asyncContext: { var3: 1, var4: 2 }
+                            },
+                            function (asyncResult) {
+                                if (asyncResult.status ==
+                                    Office.AsyncResultStatus.Failed) {
+                                    write(asyncResult.error.message);
+                                }
+                                else {
+                                    // Successfully prepended data in item body.
+                                    // Do whatever appropriate for your scenario,
+                                    // using the arguments var3 and var4 as applicable.
+                                }
+                            });
+                    }
+                }
+            });
+
+    }
+
+    // Writes to a div with id='message' on the page.
+    function write(message) {
+        document.getElementById('message').innerText += message;
     }
 
 })();
