@@ -15,6 +15,8 @@ var recipient = [{
             
         });
 
+        
+
         $("#fauxButton").click(function () {
             Office.context.mailbox.item.to.setAsync(recipient);
             Office.context.mailbox.item.subject.setAsync("This is a subject!")
@@ -25,6 +27,12 @@ var recipient = [{
             Office.context.mailbox.item.to.setAsync(recipient);
             Office.context.mailbox.item.subject.setAsync("This is a subject also!")
             Office.context.mailbox.item.body.setAsync("This is done from Read Initialize button 2 test!");
+        });
+
+        $("#realButton").click(function () {
+            Office.context.mailbox.item.to.setAsync(recipient);
+            Office.context.mailbox.item.subject.setAsync("This is a subject also but from a real button!")
+            Office.context.mailbox.item.body.setAsync("This is done from Read Initialize button 1asgdfasdfasd test!");
         });
     }
     
