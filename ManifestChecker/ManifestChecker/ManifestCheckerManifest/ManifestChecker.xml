@@ -90,7 +90,7 @@
           </ExtensionPoint>
 
           <!-- Message Read -->
-          <ExtensionPoint xsi:type="MessageReadCommandSurface">
+          <!--ExtensionPoint xsi:type="MessageReadCommandSurface">
             <OfficeTab id="TabDefault">
               <Group id="msgReadGroup">
                 <Label resid="groupLabel" />
@@ -112,7 +112,7 @@
                 
               </Group>
             </OfficeTab>
-          </ExtensionPoint>
+          </ExtensionPoint-->
           <!-- Go to http://aka.ms/ButtonCommands to learn how to add more Controls: ExecuteFunction and Menu -->
           <!-- Go to http://aka.ms/ExtensionPointsCommands to learn how to add more Extension Points: MessageRead, AppointmentOrganizer, AppointmentAttendee -->
         </DesktopFormFactor>
