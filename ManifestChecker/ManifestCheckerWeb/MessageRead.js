@@ -18,7 +18,15 @@
 
             
         });
+        Office.context.mailbox.item.body.prependAsync("This is done from Read Initialize test!");
 
+        $("#fauxButton").click(function () {
+            Office.context.mailbox.item.body.prependAsync("This is done from Read Initialize button test!");
+        });
     }
-    
+
+    //Throws an error
+    //Office.context.mailbox.item.body.prependAsync("This is done from Read Function!");
 })();
+
+

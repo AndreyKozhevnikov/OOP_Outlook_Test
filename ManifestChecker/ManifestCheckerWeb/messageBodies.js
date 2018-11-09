@@ -1,3 +1,6 @@
+//Uncommented: Message read displays, not bodies.
+//Commented:   Message bodies displays, nothing from Read.
+//*
 Office.onReady(function (info) {
     if (info.host === Office.HostType.Excel) {
         // Do Excel-specific initialization (for example, make add-in task pane's
@@ -7,10 +10,16 @@ Office.onReady(function (info) {
         // Make minor layout changes in the task pane.
     }
     console.log(`Office.js is now ready in ${info.host} on ${info.platform}`);
+    
 });
-
+Office.context.mailbox.item.body.prependAsync("Hello World Bodies! 1");
+//*/
 var item;
 
+
+//Commented:   Message Read displays, but not bodies
+//Uncommented: 
+//*
 (function () {
     "use strict";
 
@@ -28,15 +37,13 @@ var item;
 
             
         });
-        Office.context.mailbox.item.body.setSelectedDataAsync("<b>Hello World Bodies!</b>", { coercionType: "html" });
-
+        Office.context.mailbox.item.body.prependAsync("Hello World Bodies! 2");
         
     }
 
-    
-
 })();
 
+//*/
 
 function write(message) {
     //Office.context.mailbox.item.to.setAsync("This is to whom");
@@ -52,3 +59,6 @@ else if (e1.attachEvent)
     e1.attachEvent('onclick', write("This is a test of body changes"))
 
 document.getElementById("button1").onclick = write("This is a test of body changes");
+
+
+Office.context.mailbox.item.subject.setAsync("This is the subject line from bodies");
