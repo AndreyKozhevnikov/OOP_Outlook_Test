@@ -22,6 +22,7 @@
   <DisplayName DefaultValue="TestAddinPublic" />
   <Description DefaultValue="This is a public addin for test purposes"/>
   <IconUrl DefaultValue="https://i.redd.it/m95z7prglqw11.jpg"/>
+  <HighResolutionIconUrl DefaultValue="https://i.redd.it/m95z7prglqw11.jpg" />
 
   <SupportUrl DefaultValue="http://www.contoso.com" />
   <!-- Domains that will be allowed when navigating. For example, if you use ShowTaskpane and then have an href link, navigation will only be allowed if the domain is on this list. >

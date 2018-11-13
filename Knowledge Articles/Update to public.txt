@@ -1,5 +1,7 @@
 MessageRead.html:
-	No change
+	script public jquery1.9.1.js path
+	script public messageBanner.js path
+	script public messageRead.js path
 
 MessageRead.js:
 	No change
