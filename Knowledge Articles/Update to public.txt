@@ -1,0 +1,15 @@
+MessageRead.html:
+	No change
+
+MessageRead.js:
+	No change
+
+ManifestChecker.xml:
+	Version increment
+	Display name change
+	Description change
+		(Icon change when we get one)
+	FormSettings>Form>DesktopSettings>SourceLocation: MessageRead.html location
+	Resources>bt:Urls>bt:Url messageReadTaskPaneURL: MessageRead.html location
+
+	Reupload ManifestChecker.xml in place, replacing the old file.
