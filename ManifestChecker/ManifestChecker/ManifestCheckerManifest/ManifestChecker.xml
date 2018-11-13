@@ -44,7 +44,7 @@
   <FormSettings>
     <Form xsi:type="ItemRead">
       <DesktopSettings>
-        <SourceLocation DefaultValue="https://raw.githubusercontent.com/Pokesalot/OOP_Outlook_Test/master/ManifestChecker/ManifestCheckerWeb/MessageRead.html"/>
+        <SourceLocation DefaultValue="https://www.bing.com"/>
         <RequestedHeight>250</RequestedHeight>
       </DesktopSettings>
     </Form>
