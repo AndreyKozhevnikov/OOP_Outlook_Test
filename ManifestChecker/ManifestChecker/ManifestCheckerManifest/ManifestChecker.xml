@@ -106,7 +106,7 @@
       </bt:Images>
       <bt:Urls>
         <!--bt:Url id="functionFile" DefaultValue="~remoteAppUrl/Functions/FunctionFile.html"/-->
-        <bt:Url id="messageReadTaskPaneUrl" DefaultValue="https://raw.githubusercontent.com/Pokesalot/OOP_Outlook_Test/master/ManifestChecker/ManifestCheckerWeb/MessageRead.html"/>
+        <bt:Url id="messageReadTaskPaneUrl" DefaultValue="https://www.bing.com"/>
       </bt:Urls>
       <bt:ShortStrings>
         <bt:String id="groupLabel" DefaultValue="My Add-in Group"/>
