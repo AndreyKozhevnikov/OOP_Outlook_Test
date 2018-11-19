@@ -21,8 +21,8 @@
   <!-- The display name of your add-in. Used on the store and various places of the Office UI such as the add-ins dialog. -->
   <DisplayName DefaultValue="Submit a ticket, request, or question" />
   <Description DefaultValue="This is a public addin for test purposes"/>
-  <IconUrl DefaultValue="https://i.redd.it/m95z7prglqw11.jpg"/>
-  <HighResolutionIconUrl DefaultValue="https://i.redd.it/m95z7prglqw11.jpg" />
+  <IconUrl DefaultValue="https://i.redd.it/5g5x335279z11.jpg"/>
+  <HighResolutionIconUrl DefaultValue="https://i.redd.it/5g5x335279z11.jpg" />
 
   <SupportUrl DefaultValue="http://www.contoso.com" />
   <!-- Domains that will be allowed when navigating. For example, if you use ShowTaskpane and then have an href link, navigation will only be allowed if the domain is on this list. >
