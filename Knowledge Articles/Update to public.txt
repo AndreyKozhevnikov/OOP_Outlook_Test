@@ -1,7 +1,7 @@
 MessageRead.html:
-	script public jquery1.9.1.js path
-	script public messageBanner.js path
-	script public messageRead.js path
+	script public jquery1.9.1.js path (/Scripts)
+	script public messageBanner.js path (/Scripts/FabricUI)
+	script public messageRead.js path (/)
 
 MessageRead.js:
 	No change

@@ -13,7 +13,7 @@
   <Id>5f1a9b58-1f4d-4e9a-a7d1-f1ca4de1cf03</Id>
 
   <!--Version. Updates from the store only get triggered if there is a version change. -->
-  <Version>1.0.0.1</Version>
+  <Version>1.0.1.1</Version>
   <ProviderName>Andy</ProviderName>
   <DefaultLocale>en-US</DefaultLocale>
   
@@ -44,7 +44,7 @@
   <FormSettings>
     <Form xsi:type="ItemRead">
       <DesktopSettings>
-        <SourceLocation DefaultValue="https://www.bing.com"/>
+        <SourceLocation DefaultValue="http://personal.psu.edu/ath5161/OOPIT/MessageRead.html"/>
         <RequestedHeight>250</RequestedHeight>
       </DesktopSettings>
     </Form>
@@ -106,7 +106,7 @@
       </bt:Images>
       <bt:Urls>
         <!--bt:Url id="functionFile" DefaultValue="~remoteAppUrl/Functions/FunctionFile.html"/-->
-        <bt:Url id="messageReadTaskPaneUrl" DefaultValue="https://www.bing.com"/>
+        <bt:Url id="messageReadTaskPaneUrl" DefaultValue="http://personal.psu.edu/ath5161/OOPIT/MessageRead.html"/>
       </bt:Urls>
       <bt:ShortStrings>
         <bt:String id="groupLabel" DefaultValue="My Add-in Group"/>
