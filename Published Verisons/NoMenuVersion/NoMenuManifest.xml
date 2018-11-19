@@ -44,7 +44,7 @@
   <FormSettings>
     <Form xsi:type="ItemRead">
       <DesktopSettings>
-        <SourceLocation DefaultValue="http://personal.psu.edu/ath5161/OOPIT/MessageRead.html"/>
+        <SourceLocation DefaultValue="http://personal.psu.edu/ath5161/OOPIT/NoMenuVersion/NoMenuSite.html"/>
         <RequestedHeight>250</RequestedHeight>
       </DesktopSettings>
     </Form>
@@ -106,7 +106,7 @@
       </bt:Images>
       <bt:Urls>
         <!--bt:Url id="functionFile" DefaultValue="~remoteAppUrl/Functions/FunctionFile.html"/-->
-        <bt:Url id="messageReadTaskPaneUrl" DefaultValue="http://personal.psu.edu/ath5161/OOPIT/MessageRead.html"/>
+        <bt:Url id="messageReadTaskPaneUrl" DefaultValue="http://personal.psu.edu/ath5161/OOPIT/NoMenuVersion/NoMenuSite.html"/>
       </bt:Urls>
       <bt:ShortStrings>
         <bt:String id="groupLabel" DefaultValue="This is a Group"/>
