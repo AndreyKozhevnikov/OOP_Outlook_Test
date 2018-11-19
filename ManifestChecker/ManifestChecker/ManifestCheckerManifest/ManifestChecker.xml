@@ -13,7 +13,7 @@
   <Id>5f1a9b58-1f4d-4e9a-a7d1-f1ca4de1cf03</Id>
 
   <!--Version. Updates from the store only get triggered if there is a version change. -->
-  <Version>1.0.1.1</Version>
+  <Version>1.0.1.2</Version>
   <ProviderName>Andy</ProviderName>
   <DefaultLocale>en-US</DefaultLocale>
   
