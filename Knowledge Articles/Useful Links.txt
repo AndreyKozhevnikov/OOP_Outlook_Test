@@ -11,3 +11,5 @@ in Admin portal:
 
 
 
+ManifestChecker id:  5f1a9b58-1f4d-4e9a-a7d1-f1ca4de1cf03
+OutlookTestAddin id: 7688a70d-9275-4915-8fef-2bbaae21e3e7

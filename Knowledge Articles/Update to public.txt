@@ -10,7 +10,15 @@ ManifestChecker.xml:
 	Version increment
 	Display name change
 	Description change
-		(Icon change when we get one)
+	
+	Icon Changes:
+		IconUrl
+		HighResolutionIconUrl
+		Resources>bt:Images:
+			icon16
+			icon32
+			icon80
+
 	FormSettings>Form>DesktopSettings>SourceLocation: MessageRead.html location
 	Resources>bt:Urls>bt:Url messageReadTaskPaneURL: MessageRead.html location
 
