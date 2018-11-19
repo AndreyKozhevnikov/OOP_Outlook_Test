@@ -109,9 +109,9 @@
         <bt:Url id="messageReadTaskPaneUrl" DefaultValue="http://personal.psu.edu/ath5161/OOPIT/MessageRead.html"/>
       </bt:Urls>
       <bt:ShortStrings>
-        <bt:String id="groupLabel" DefaultValue="My Add-in Group"/>
-        <bt:String id="customTabLabel"  DefaultValue="My Add-in Tab"/>
-        <bt:String id="paneReadButtonLabel" DefaultValue="Display all properties"/>
+        <bt:String id="groupLabel" DefaultValue="This is a Group"/>
+        <bt:String id="customTabLabel"  DefaultValue="OM vTiger"/>
+        <bt:String id="paneReadButtonLabel" DefaultValue="OM vTiger Requester"/>
         <bt:String id="paneReadSuperTipTitle" DefaultValue="Get all properties"/>
       </bt:ShortStrings>
       <bt:LongStrings>
