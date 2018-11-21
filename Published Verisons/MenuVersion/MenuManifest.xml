@@ -19,8 +19,8 @@
   
   
   <!-- The display name of your add-in. Used on the store and various places of the Office UI such as the add-ins dialog. -->
-  <DisplayName DefaultValue="Submit a ticket, request, or question" />
-  <Description DefaultValue="This is a public addin for test purposes"/>
+  <DisplayName DefaultValue="OOP vTiger (Menus)" />
+  <Description DefaultValue="Submit tickets to the Office of the President with a menu structure, right from your email."/>
   <IconUrl DefaultValue="https://i.redd.it/m95z7prglqw11.jpg"/>
   <HighResolutionIconUrl DefaultValue="https://i.redd.it/m95z7prglqw11.jpg" />
 
@@ -44,7 +44,7 @@
   <FormSettings>
     <Form xsi:type="ItemRead">
       <DesktopSettings>
-        <SourceLocation DefaultValue="http://personal.psu.edu/ath5161/OOPIT/MessageRead.html"/>
+        <SourceLocation DefaultValue="http://personal.psu.edu/ath5161/OOPIT/MenuVersion/MenuSite.html"/>
         <RequestedHeight>250</RequestedHeight>
       </DesktopSettings>
     </Form>
@@ -106,7 +106,7 @@
       </bt:Images>
       <bt:Urls>
         <!--bt:Url id="functionFile" DefaultValue="~remoteAppUrl/Functions/FunctionFile.html"/-->
-        <bt:Url id="messageReadTaskPaneUrl" DefaultValue="http://personal.psu.edu/ath5161/OOPIT/MessageRead.html"/>
+        <bt:Url id="messageReadTaskPaneUrl" DefaultValue="http://personal.psu.edu/ath5161/OOPIT/MenuVersion/MenuSite.html"/>
       </bt:Urls>
       <bt:ShortStrings>
         <bt:String id="groupLabel" DefaultValue="This is a Group"/>

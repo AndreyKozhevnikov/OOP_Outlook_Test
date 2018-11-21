@@ -13,14 +13,14 @@
   <Id>7688a70d-9275-4915-8fef-2bbaae21e3e7</Id>
 
   <!--Version. Updates from the store only get triggered if there is a version change. -->
-  <Version>1.0.1.2</Version>
+  <Version>1.0.2.0</Version>
   <ProviderName>Andy</ProviderName>
   <DefaultLocale>en-US</DefaultLocale>
 
 
   <!-- The display name of your add-in. Used on the store and various places of the Office UI such as the add-ins dialog. -->
-  <DisplayName DefaultValue="Submit a ticket, request, or question" />
-  <Description DefaultValue="This is a public addin for test purposes"/>
+  <DisplayName DefaultValue="OOP vTiger (No Menu)" />
+  <Description DefaultValue="Submit an incident, request, or question from a streamlined interface, right from your email."/>
   <IconUrl DefaultValue="https://i.redd.it/5g5x335279z11.jpg"/>
   <HighResolutionIconUrl DefaultValue="https://i.redd.it/5g5x335279z11.jpg" />
 

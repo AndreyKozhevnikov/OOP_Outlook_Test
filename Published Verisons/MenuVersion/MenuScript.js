@@ -22,41 +22,65 @@ var recipient = [{
          * The jQuery functionality is copy-paste, and any html elements can be added in place.
          * 
         */
-
-        $("#fauxButton").click(function () {
-            Office.context.mailbox.item.to.setAsync(recipient);
-            Office.context.mailbox.item.subject.setAsync("This is a subject!");
-            Office.context.mailbox.item.body.setAsync("This is done from<br /> Read Initialize button test!" +
-                "Multiline drifting test<br/>" +
-                "<button id = \"genButt\">This is a generated button </button>",
-                { coercionType: Office.CoercionType.Html });
-            
-            $("#genButt").click(function () {
-                Office.context.mailbox.item.to.setAsync(recipient);
-                Office.context.mailbox.item.subject.setAsync("This is a generated subject also!");
-                Office.context.mailbox.item.body.setAsync("This is done from generated button button 2 test!", { coercionType: Office.CoercionType.Html });
-            });
-            
-        });
-
-        $("#button2").click(function () {
-
-            $("#realButton").attr("value", "changedID");
-            $("#fauxButton").hide();
-            Office.context.mailbox.item.to.setAsync(recipient);
-            Office.context.mailbox.item.subject.setAsync("This is a subject also!");
-            Office.context.mailbox.item.body.setAsync("This is done from Read Initialize button 2 test!", { coercionType: Office.CoercionType.Html });
-        });
-
-        $("#realButton").click(function () {
-            $("#fauxButton").show();
-            Office.context.mailbox.item.to.setAsync(recipient);
-            Office.context.mailbox.item.subject.setAsync("This is a subject also but from a real button!");
-            Office.context.mailbox.item.body.setAsync("This is done from Read Initialize button 1asgdfasdfasd test!", { coercionType: Office.CoercionType.Html });
-        });
-        
-
-
+		
+		//Useful Functions
+		function hideAll(showCancel){
+			$("#Menu_Main").hide();
+			$("#Menu_Incident").hide();
+			$("#Menu_Request").hide();
+			$("#Menu_Question").hide();
+			
+			$("#Button_Cancel").hide();
+			
+			if(showCancel == true){
+				$("#Button_Cancel").show();
+			}
+		};
+		
+		function composeMessage(Subject, Body){
+			Office.context.mailbox.item.to.setAsync(recipient);
+            Office.context.mailbox.item.subject.setAsync(Subject);
+            Office.context.mailbox.item.body.setAsync(Body, { coercionType: Office.CoercionType.Html });
+			
+			//Once we have made a message, we can close the task pane
+			Office.context.ui.closeContainer();
+		};
+		
+		//Default build behavior
+		hideAll();
+		$("#Menu_Main").show();
+		
+		//Behavior of buttons in the main menu
+		$("#Button_Incident").click(function (){
+			hideAll(true);
+			$("#Menu_Incident").show();
+		});
+		$("#Button_Request").click(function (){
+			hideAll(true);
+			$("#Menu_Request").show();
+		});
+		$("#Button_Question").click(function (){
+			hideAll(true);
+			$("#Menu_Question").show();
+		});
+		
+		//Cancel button behavior
+		$("#Button_Cancel").click(function () {
+			hideAll(false)
+			$("#Menu_Main").show();
+		});
+		
+		//Behavior of buttons in the Incident menu
+		$("#Button_Incident_Passwords").click(function (){
+			composeMessage("I have a question regarding passwords", "Here is my question");
+		});
+		
+		//Behavior of buttons in the Request menu
+		
+		//Behavior of buttons in the Question menu
+		
+		
+		
     }
     
 })();
